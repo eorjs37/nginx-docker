@@ -24,7 +24,7 @@ run : 명령어 실행
 
 ```Dockerfile
 FROM nginx:latest
-COPY . /usr/share/nginx/html
+COPY ./src /usr/share/nginx/html
 ```
 
 > 이미지 빌드
