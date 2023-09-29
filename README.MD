@@ -37,3 +37,35 @@ docker build -t nginx-practice:0.0.1 .
 ```bash
 docker run -d --name webserver -p 80:80 nginx-practice:0.0.1
 ```
+
+
+## docker-compose 관리
+> 여러개의 컨테이너들을 하나로 관리 하기 위한 것.
+
+### docker-compose 파일 항목
+
+#### versions
+> 도커 컴퍼즈의 버전을 기재
+
+#### services
+> 여러개의 컨테이너의 집합체
+
+#### image
+> 사용하고자 하는 이미지
+
+#### restart
+> 컨테이너 종료시 재시작 여부
+
+#### ports
+> 포트 설정
+
+#### 도커 컴퍼즈 빌드 명령어
+
+```bash
+docker-compose up --build -d
+```
+
+##### 도커 컴퍼즈 kill
+```bash
+docker-compose down
+```
