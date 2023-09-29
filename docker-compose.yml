@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  web:
+    image: nginx:latest
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./conf/default.conf:/etc/nginx/conf.d/default.conf
+      - ./src:/usr/share/nginx/html
+    ports:
+      - "80:80"
