@@ -69,3 +69,9 @@ docker-compose up --build -d
 ```bash
 docker-compose down
 ```
+
+### docker hub
+```bash
+# docker commit -m [image 설명] -a [ 사용자 mail ] [ container Name or ID ] [ 생성할 image name : Tag ]
+docker commit -m "ip address change" -a "peksoon@naver.com" bb29fe475fb5 peksoon_tomcat:1.0.2
+```
